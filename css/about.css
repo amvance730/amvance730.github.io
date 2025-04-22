@@ -140,6 +140,13 @@ a:hover {
     white-space: nowrap; 
   }
 
+
+  #portrait{
+    padding: 10px;
+    
+
+  }
+
   @media screen and (min-width: 768px) {
     .nav-collapse ul {
     flex-direction: row;
