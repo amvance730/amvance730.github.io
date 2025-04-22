@@ -1,6 +1,38 @@
+.information {
+    padding-left: 30px;
+}
+.title h1{
+    font-size: 40px;
+    color:#072768;
+}
+
+.title h2 {
+    font-size: 18px;
+    color: #351303;
+    padding-bottom: 20px;
+}
+
+.address {
+    font-size: 18px;
+    color:#351303;
+    padding-bottom: 20px;
+}
+
+.phone {
+    font-size: 18px;
+    color:#351303;
+    padding-bottom: 20px;
+}
+
+.email-info {
+    font-size: 18px;
+    color:#351303;
+}
+
 .form-section {
     display: flex;
     flex-direction: column;
+    justify-content: left;
     margin-top: 30px;
     padding: 40px;
     text-align: left;
@@ -9,9 +41,9 @@
   }
   
   .form-section h1 {
-    font-size: 1.5rem;
+    font-size: 30px;
     margin-bottom: 20px;
-    color: black;
+    color: #072768;
   }
   
   form {
@@ -19,7 +51,6 @@
     flex-direction: column;
     gap: 15px;
     max-width: 400px;
-    margin: 0 auto;
   }
 
   form label {
@@ -33,4 +64,14 @@
     font-size: 1rem;
     border: 1px solid #ddd;
     border-radius: 5px;
+  }
+
+  .submit-btn {
+    background: #072768;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
   }
