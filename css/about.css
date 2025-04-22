@@ -102,7 +102,8 @@ a:hover {
 
 
   .logo{
-    height: 225px;
+    height: auto;
+    max-height: 100px;
     width: auto;
     object-fit: contain;
   }
