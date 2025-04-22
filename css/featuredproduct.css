@@ -127,7 +127,12 @@ a:hover {
   .nav-collapse ul ul a {
     padding-left: 2em;
   }
+.featuredproducttext {
+    color:#072768;
+    padding: 3rem;
+    display: flex;
 
+}
 
 
   @media screen and (min-width: 768px) {
@@ -162,4 +167,8 @@ a:hover {
 
   footer{
     background: #072768;
+    margin:0;
+  }
+  .title {
+    color: white;
   }
