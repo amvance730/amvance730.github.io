@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
+  overflow-x: hidden;
 }
 
 a:active,
@@ -142,7 +143,12 @@ a:hover {
 
 
   #portrait{
-    padding: 10px;
+    width: 100%;
+    height: auto;
+    max-width: 90vw;
+    display: block;
+    margin: 30px auto;
+
     
 
   }
