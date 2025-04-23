@@ -90,7 +90,7 @@ main p{
     background-color: #072768; 
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    position: relative;
   }
   
   .title {
@@ -104,12 +104,16 @@ main p{
     white-space: nowrap; 
   }
 
+  .biotitle{
+    text-align: center;
+  }
+
 
   .logo{
-    height: auto;
-    max-height: 100px;
+    height: 150px;
     width: auto;
     object-fit: contain;
+    align-self: flex-start;
   }
   
   .nav-collapse,
@@ -155,14 +159,19 @@ main p{
 
   #portrait{
     width: 100%;
-    height: 50%;
+    height: auto;
     max-width: 90vw;
     display: block;
     margin: 30px auto;
-
-    
-
+    object-fit: contain;
   }
+
+  .bio h1{
+    text-align: center;
+  }
+
+
+  
 
   @media screen and (min-width: 768px) {
     .nav-collapse ul {
@@ -195,19 +204,57 @@ main p{
 
     main {
       display: grid;
-      grid-template-areas: "bio photo";
-      grid-template-columns: 1fr 2fr;
+      grid-template-areas:
+      "bio photo";
+      grid-template-columns: 1fr 1fr;
     }
 
     #portrait{
       grid-area: photo;
+      padding-right: 20%;
     }
     
-    #bio{
+    .bio{
       grid-area: bio;
     }
+
   }
 
   footer{
     background: #072768;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    color: white;
+  }
+
+  footer nav.footer ul{
+    display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  }
+
+  footer nav.footer ul li {
+    margin: 0 1em;
+  }
+
+  footer nav.footer ul li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  footer nav.footer ul li a:hover,
+  footer nav.footer ul li a:focus{
+    text-decoration: underline;
+  }
+
+  footer p{
+    align-self: center;
+  }
+
+  footer h3{
+    width: 100%;
+    text-align: center;
+    margin: 1em 0;
   }
