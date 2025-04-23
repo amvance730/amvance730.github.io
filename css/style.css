@@ -81,6 +81,12 @@ a:hover {
     overflow-y: auto;
     margin-top: 50px;
   }
+
+  .logo{
+    height: 5px;
+    width: auto;
+    object-fit: contain;
+  }
   
   header {
     background-color: #072768; 
