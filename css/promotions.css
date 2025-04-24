@@ -105,12 +105,12 @@ a:hover {
     color: rgb(255, 255, 255);
     white-space: nowrap; 
   }
-
-
   .logo{
-    height: 100px;
+    height: auto;
+    max-height: 15rem;
     width: auto;
     object-fit: contain;
+    box-sizing: border-box;
   }
   
   .nav-collapse,
