@@ -287,7 +287,8 @@ main {
 }
 
 .cta-button:hover {
-    background-color: #0a3a8a;
+    background-color: #5079B2;
+    color: #072768;
 }
 
 @media screen and (max-width: 768px) {

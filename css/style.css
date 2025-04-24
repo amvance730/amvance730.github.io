@@ -279,5 +279,6 @@ a:hover {
   text-decoration: none;
 }
 .detailsbutton:hover,.detailsbutton:focus {
-  background: #996F51;
+  background-color: #5079B2;
+  color: #072768;
 }

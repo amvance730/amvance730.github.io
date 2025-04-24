@@ -336,7 +336,8 @@ form input {
 }
 
 .submit-btn:hover .submit-btn:focus{
-    background: #996F51;
+    background-color: #5079B2;
+    color: #072768;
 }
 
 
