@@ -230,6 +230,14 @@ form {
     margin-bottom: 10px;
 }
 
+textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: vertical;
+}
+
 form label {
     color: black;
     font-size: 16px;
