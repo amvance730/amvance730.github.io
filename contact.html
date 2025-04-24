@@ -1,10 +1,10 @@
 <!DOCTYPE HTML>
 <html lang="en">
-  
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, 
-         initial-scale-1, shrink-to-fit=no">
+        initial-scale-1, shrink-to-fit=no">
     <title>Lindsay Furniture</title>
     <link rel="stylesheet" href="css/contact.css">
     <script src="js/responsive-nav.js"></script>
@@ -12,11 +12,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Jersey+10&family=Jockey+One&family=Lilita+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@553&family=Patrick+Hand&family=Rampart+One&family=VT323&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     
-  </head>
+</head>
 
 <body>
-    <hea<a href="./index.html"><img class="logo"  src="./images/logo.png" alt="Lindsay Furniture"></a>
-        
+    <header>
+        <a href="./index.html"><img class="logo"  src="./images/logo.png" alt="Lindsay Furniture"></a>
         <nav class="nav-collapse">
             <ul>
                 <li class="menu-item"><a href="about.html" data-scroll>About Us</a></li>
@@ -25,68 +25,79 @@
         </nav>
     </header>
     
-    <main>
+<main>
+    <h1>Locations</h1>
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps?q=1420+College+Street,+Newberry,+SC+29108&output=embed"
+            title="Map showing 1420 College Street, Newberry, SC"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+    <div class="box1">
         <div class="information">
             <h1>Lindsay Furniture</h1>
             <h2>Today’s Hours: 10:00 AM - 5:00 PM</h2>
-        </div>
-        
+
             <div class="address">
                 <p>1420 College Street</p>
                 <p>Newberry, SC 29108</p>
             </div>
-        
+            
             <div class="phone">
                 <strong>Phone</strong>
                 <p>803-276-6007</p>
             </div>
-        
+            
             <div class="email-info">
                 <strong>Email</strong>
                 <p>lindsayfurniture@bellsouth.net</p>
             </div>
         </div>
-    
+            
         <div class="form-section">
             <h1>Contact Us</h1>
+
             <form>
+                <div class="form-group">
+                    <label for="name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
         
-              <div class="first-name">
-                <label for="name">First Name</label>
-                <input type="text" id="first-name" name="first-name" required>
-              </div>
-    
-              <div class="last-name">
-                <label for="name">First Name</label>
-                <input type="text" id="last-name" name="last-name" required>
-              </div>
+                <div class="form-group">
+                    <label for="name">First Name</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
         
-              <div class="email">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-              </div>
-    
-              <div class="phone-number">
-                <label for="phone-number">Phone</label>
-                <input type="text" id="phone-number" name="phone-number" required>
-              </div>
-              
-              <div class="help">
-                <label for="help">How can we help?</label>
-                <input type="text" id="help" name="help" required>
-              </div>
-        
-              <button type="submit" class="submit-btn">Submit</button>
-        
-            </form>
-          </div>
-    
-    </main>
+                <div class="form-group">
+                    <label for="phone-number">Phone</label>
+                    <input type="text" id="phone-number" name="phone-number" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="help">How can we help?</label>
+                    <textarea id="help" name="help" rows="5" required></textarea>
+                </div>
+            
+                <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </div>
+    </div>
+</main>
+
     <footer>
+        <footer>
         <h1 class="title">LINDSAY FURNITURE</h1>
         <h2>SHOP SMART, BUY LOCAL</h2>
-        <h3>1420 College Street Newberry, SC 29108
-            803-276-6007
+        <h3>1420 College Street Newberry, SC 29108<br>
+            803-276-6007<br>
             lindsayfurniture@bellsouth.net
         </h3>
         <nav class="footer nav">
