@@ -394,7 +394,8 @@ form input {
     h1 {
         font-size: 40px;
         color:#072768;
-        margin: 0 auto;
+
+        text-align: center;
     }
 
     .box1{
@@ -459,5 +460,8 @@ form input {
         font-size: 40px;
         color:#072768;
         margin: 0 auto;
+    }
+    #locations {
+        text-align: center;
     }
 }
