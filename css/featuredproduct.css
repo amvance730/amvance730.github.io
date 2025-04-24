@@ -81,12 +81,6 @@ a:hover {
     overflow-y: auto;
     margin-top: 50px;
   }
-
-  .logo{
-    height: 5px;
-    width: auto;
-    object-fit: contain;
-  }
   
   header {
     background-color: #072768; 
@@ -133,15 +127,12 @@ a:hover {
   .nav-collapse ul ul a {
     padding-left: 2em;
   }
+.featuredproducttext {
+    color:#072768;
+    padding: 3rem;
+    display: flex;
 
-  .title {
-    background-color: #072768; 
-    text-decoration: none;
-    font-weight: bold;
-    line-height: 55px;
-    padding: 0 20px;
-    white-space: nowrap; 
-  }
+}
 
 
   @media screen and (min-width: 768px) {
@@ -176,38 +167,8 @@ a:hover {
 
   footer{
     background: #072768;
-    margin: 0;
+    margin:0;
   }
   .title {
     color: white;
-    padding-top: 3rem;
-    font-size: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .tagline {
-    color: white;
-    display: flex;
-    justify-content: center;
-  }
-  .address {
-    color: white;
-  }
-  .phone {
-    color: white;
-  }
-  .email {
-    color: white;
-  }
-  .copyright {
-    color: white;
-    display: flex;
-    justify-content: center;
-  }
-  .info {
-    line-height: 1px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
