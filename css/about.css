@@ -86,13 +86,6 @@ main p{
     margin-top: 50px;
   }
   
-  header {
-    background-color: #072768; 
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-  }
-  
   .title {
     font-family: "Geist Mono";
     background-color: #072768; 
@@ -108,14 +101,21 @@ main p{
     text-align: center;
   }
 
-
-  .logo{
-    height: 150px;
-    width: auto;
-    object-fit: contain;
-    align-self: flex-start;
+  header {
+    background-color: #072768; 
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 1rem;
   }
   
+  .logo{
+    height: auto;
+    max-height: 6rem;
+    width: auto;
+    object-fit: contain;
+    box-sizing: border-box;
+  }
   .nav-collapse,
   .nav-collapse * {
     box-sizing: border-box;

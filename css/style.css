@@ -87,12 +87,12 @@ a:hover {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    
+    padding: 1rem 1rem;
   }
   
   .logo{
     height: auto;
-    max-height: 7rem;
+    max-height: 6rem;
     width: auto;
     object-fit: contain;
     box-sizing: border-box;
@@ -274,8 +274,6 @@ a:hover {
   border: none;
   border-radius: 0.5rem;
   padding: 0.8rem 1.5rem;
-  margin-left: 10vw;
-  margin-right: 10vw;
   font-size: 1.1rem;
   font-weight: 600;
   cursor: pointer;
