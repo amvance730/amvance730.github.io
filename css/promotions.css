@@ -35,6 +35,7 @@ main {
 .nav-toggle {
   top: 3.3%;
 }
+
 .deals {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
