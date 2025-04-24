@@ -463,5 +463,6 @@ form input {
     }
     #locations {
         text-align: center;
+        margin-top: 1rem;
     }
 }
