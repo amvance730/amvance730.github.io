@@ -32,6 +32,7 @@ a:hover {
     z-index: 1000;
     overflow: hidden;
     float: right;
+    top: 3.3%;
   }
   
   .nav-toggle:before {
@@ -79,6 +80,7 @@ a:hover {
     max-height: 100vh;
     overflow-y: auto;
     margin-top: 50px;
+    
   }
   
   header {
@@ -162,6 +164,8 @@ a:hover {
   
     .nav-collapse.closed {
       max-height: none;
+      display: flex;
+      align-items: center;
     }
     .nav-toggle {
       display: none;
