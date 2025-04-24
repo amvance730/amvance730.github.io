@@ -16,6 +16,13 @@ a:hover {
   outline: 0;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  padding: 1rem;
+}
+
 @font-face {
     font-family: "responsivenav";
     src: url("../icons/responsivenav.eot");
@@ -37,7 +44,7 @@ a:hover {
     z-index: 1000;
     overflow: hidden;
     float: right;
-    top: 3.3%;
+    top: 3.7%;
   }
   
   .nav-toggle:before {
@@ -93,8 +100,7 @@ a:hover {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 1rem 1rem;
-    padding-bottom: 2rem;
+    padding: 1rem;
   }
   
   .logo{
@@ -147,26 +153,27 @@ a:hover {
     white-space: nowrap; 
   }
 
-
   @media screen and (min-width: 768px) {
+    .header {
+      display: flex;
+      align-items: center;
+    }
+  
     .nav-collapse ul {
-    flex-direction: row;
-    align-items: flex-end;
-  }
-    
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 0; 
+    }
+  
     .nav-collapse li {
-      width: auto;
+      display: flex;
+      align-items: center;
     }
-  
-    .nav-collapse a {
-      padding: 1.02em 2em;
-      text-align: center;
-      border-top: 0;
-      margin: 0;
-    }
-  
-    .nav-collapse ul ul a {
-      display: none;
+
+    .nav-collapse a{
+      padding: 1.5rem;
+      font-size: 1.1rem;
     }
   
     .nav-collapse.closed {
@@ -174,11 +181,12 @@ a:hover {
       display: flex;
       align-items: center;
     }
+  
     .nav-toggle {
       display: none;
     }
-    
   }
+  
   .fraunces-bold{
     font-family: "Fraunces", serif;
     font-optical-sizing: auto;
