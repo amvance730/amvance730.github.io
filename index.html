@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/home.css">
   <script src="js/responsive-nav.js"></script>
+  <script src="https://cdn.lordicon.com/lordicon.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
@@ -32,22 +33,46 @@
     <main>
             <div class="featured-product">
                 <h1 class="featuredproducttext" >Featured Product</h1>
-                <img src="./images/featuredproduct.png" alt="Zero Gravity Electric Recliner in gray">
-                <h2>Zero Gravity Recliner</h2>
-                <h3>Best Home Furnishings</h3>
-                <a class="detailsbutton" href="/featuredproduct.html">Favorite</a>
-                <img src="./images/featuredproduct.png" alt="Zero Gravity Electric Recliner in gray">
-                <h2>Zero Gravity Recliner</h2>
-                <h3>Best Home Furnishings</h3>
-                <a class="detailsbutton" href="/featuredproduct.html">Details</a>
-                <img src="./images/featuredproduct.png" alt="Zero Gravity Electric Recliner in gray">
-                <h2>Zero Gravity Recliner</h2>
-                <h3>Best Home Furnishings</h3>
-                <a class="detailsbutton" href="/featuredproduct.html">Details</a>
-                <img src="./images/featuredproduct.png" alt="Zero Gravity Electric Recliner in gray">
-                <h2>Zero Gravity Recliner</h2>
-                <h3>Best Home Furnishings</h3>
-                <a class="detailsbutton" href="/featuredproduct.html">Details</a>
+                <div class="card1">
+                    <img src="./images/featuredproduct.png" alt="Zero Gravity Electric Recliner in gray">
+                    <h2>Zero Gravity Recliner</h2>
+                    <h3>Best Home Furnishings</h3>
+                    <button class="like-button" id="likeBtn">Favorite
+                        <img id="heartImage" src="/images/emptyheart.png" alt="heart" />
+                    </button>
+                </div>
+                <div class="card2">
+                    <img src="./images/featuredproduct.png" alt="Zero Gravity Electric Recliner in gray">
+                    <h2>Zero Gravity Recliner</h2>
+                    <h3>Best Home Furnishings</h3>
+                    <button class="like-button" id="likeBtn">Favorite
+                        <img id="heartImage" src="/images/emptyheart.png" alt="heart" />
+                    </button>
+                </div>
+                <div class="card3">
+                    <img src="./images/featuredproduct.png" alt="Zero Gravity Electric Recliner in gray">
+                    <h2>Zero Gravity Recliner</h2>
+                    <h3>Best Home Furnishings</h3>
+                    <button class="like-button" id="likeBtn">Favorite
+                        <img id="heartImage" src="/images/emptyheart.png" alt="heart" />
+                    </button>
+                </div>
+                <div class="card4">
+                    <img src="./images/featuredproduct.png" alt="Zero Gravity Electric Recliner in gray">
+                    <h2>Zero Gravity Recliner</h2>
+                    <h3>Best Home Furnishings</h3>
+                    <button class="like-button" id="likeBtn">Favorite
+                        <img id="heartImage" src="/images/emptyheart.png" alt="heart" />
+                    </button>
+                </div>
+                <div class="card5">
+                    <img src="./images/featuredproduct.png" alt="Zero Gravity Electric Recliner in gray">
+                    <h2>Zero Gravity Recliner</h2>
+                    <h3>Best Home Furnishings</h3>
+                    <button class="like-button" id="likeBtn">Favorite
+                        <img id="heartImage" src="/images/emptyheart.png" alt="heart" />
+                    </button>
+                </div>
             </div>
         <h1 class="feature text">Featured Brands</h1>
         <div class="featured brands">
@@ -68,6 +93,20 @@
     <script src="js/fastclick.js"></script>
     <script src="js/scroll.js"></script>
     <script src="js/fixed-responsive-nav.js"></script>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script>
+        const likeBtn = document.getElementById("likeBtn");
+        const heartImage = document.getElementById("heartImage");
+    
+        let liked = false;
+    
+        likeBtn.addEventListener("click", () => {
+          liked = !liked;
+          heartImage.src = liked 
+  ? "/images/fullheart.png"
+  : "/images/emptyheart.png";
+        });
+      </script>
 </body>  
   
 </html>

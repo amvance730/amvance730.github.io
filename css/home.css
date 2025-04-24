@@ -1,4 +1,5 @@
-.detailsbutton {
+
+.like-button {
     background: #072768;
     color: white;
     display: flex;
@@ -6,19 +7,26 @@
     align-items: center;
     border: none;
     border-radius: 0.5rem;
-    padding: 0.8rem 1.5rem;
+    padding: 0.8rem 5rem;
     font-size: 1.1rem;
+    margin-bottom: 5rem;
     font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.3s ease;
     font-family: "Fraunces", serif;
     text-decoration: none;
+    transition: transform 0.2s ease;
   }
-  .detailsbutton:hover,.detailsbutton:focus {
+  #heartImage {
+    height: 2rem;
+    margin-left: 1rem;
+  }
+
+  .like-button:hover {
+    transform: scale(1.1);
     background-color: #5079B2;
     color: #072768;
-    text-decoration: underline;
   }
+
   .featured-product {
     display: flex;
     flex-direction: column;

@@ -208,5 +208,4 @@ window.smoothScroll = (function (window, document, undefined) {
     init: init,
     animateScroll: animateScroll
   };
-
 })(window, document);
