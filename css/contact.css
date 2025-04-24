@@ -82,7 +82,6 @@ a:active, a:hover {
     overflow-y: auto;
     margin-top: 50px;
   }
-
   
   header {
     background-color: #072768; 
@@ -98,7 +97,6 @@ a:active, a:hover {
     object-fit: contain;
     box-sizing: border-box;
 }
-
   .nav-collapse,
   .nav-collapse * {
     box-sizing: border-box;
@@ -165,21 +163,59 @@ h1 {
     flex-direction: row;
     align-items: flex-end;
   }
-    
-    .nav-collapse li {
-      width: auto;
-    }
   
-    .nav-collapse a {
-      padding: 1.02em 2em;
+  footer {
+      background-color: #072768;
+      color: white;
+      padding: 3rem 2rem;
       text-align: center;
-      border-top: 0;
-      margin: 0;
-    }
+      margin-top: 3rem;
+      font-family: "Fraunces", serif;
+  }
   
-    .nav-collapse ul ul a {
-      display: none;
-    }
+  footer .title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: white;
+      font-family: "Fraunces", serif;
+  }
+  
+  footer h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      color: #f8f8f8;
+      font-family: "Fraunces", serif;
+  }
+  
+  footer h3 {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+      color: #e0e0e0;
+      font-family: "Fraunces", serif;
+  }
+  
+  .footer.nav {
+      margin: 2rem 0;
+  }
+  
+  .footer.nav ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+  }
+  
+  .footer.nav a {
+      color: #e0e0e0;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+      font-family: "Fraunces", serif;
+  }
   
     .nav-collapse.closed {
       max-height: none;
@@ -300,7 +336,8 @@ form input {
 }
 
 .submit-btn:hover .submit-btn:focus{
-    background: #996F51;
+    background-color: #5079B2;
+    color: #072768;
 }
 
 
