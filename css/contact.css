@@ -303,70 +303,81 @@ form input {
     background: #996F51;
 }
 
-footer {
-    background-color: #072768;
-    color: white;
-    padding: 3rem 2rem;
-    text-align: center;
-    margin-top: 3rem;
+
+.fraunces-bold{
     font-family: "Fraunces", serif;
-}
-
-footer .title {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: white;
-    font-family: "Fraunces", serif;
-}
-
-footer h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-    color: #f8f8f8;
-    font-family: "Fraunces", serif;
-}
-
-footer h3 {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 2rem;
-    color: #e0e0e0;
-    font-family: "Fraunces", serif;
-}
-
-.footer.nav {
-    margin: 2rem 0;
-}
-
-.footer.nav ul {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.footer.nav a {
-    color: #e0e0e0;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-    font-family: "Fraunces", serif;
-}
-
-.footer.nav a:hover {
-    color: white;
-    text-decoration: underline;
-}
-
-footer p {
-    font-size: 0.9rem;
-    color: #b0b0b0;
-    margin-top: 2rem;
-    font-family: "Fraunces", serif;
-}
+    font-optical-sizing: auto;
+    font-weight: 5;
+    font-style: normal;
+    font-variation-settings:
+      "SOFT" 0,
+      "WONK" 0;
+  }
+  
+  footer {
+      background-color: #072768;
+      color: white;
+      padding: 3rem 2rem;
+      text-align: center;
+      margin-top: 3rem;
+      font-family: "Fraunces", serif;
+  }
+  
+  footer .title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: white;
+      font-family: "Fraunces", serif;
+  }
+  
+  footer h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      color: #f8f8f8;
+      font-family: "Fraunces", serif;
+  }
+  
+  footer h3 {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+      color: #e0e0e0;
+      font-family: "Fraunces", serif;
+  }
+  
+  .footer.nav {
+      margin: 2rem 0;
+  }
+  
+  .footer.nav ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+  }
+  
+  .footer.nav a {
+      color: #e0e0e0;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+      font-family: "Fraunces", serif;
+  }
+  
+  .footer.nav a:hover {
+      color: white;
+      text-decoration: underline;
+  }
+  
+  footer p {
+      font-size: 0.9rem;
+      color: #b0b0b0;
+      margin-top: 2rem;
+      font-family: "Fraunces", serif;
+  }
 
 @media screen and (min-width: 768px) {
     .nav-collapse ul {
