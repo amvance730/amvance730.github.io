@@ -1,9 +1,14 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 html,
 body {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  overflow-x: hidden;
+margin: 0;
+padding: 0;
+border: 0;
+overflow-x: hidden;
+font-family: "Fraunces", serif;
 }
 
 a:active,
@@ -92,8 +97,8 @@ a:hover {
   
   .logo{
     height: auto;
-    max-height: 8rem;
-    padding: 1rem;
+    max-height: 6rem;
+    padding: 0.5rem;
     width: auto;
     object-fit: contain;
     box-sizing: border-box;
