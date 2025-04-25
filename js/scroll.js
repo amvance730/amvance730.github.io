@@ -202,10 +202,5 @@ window.smoothScroll = (function (window, document, undefined) {
     }
 
   };
-
-  // Return public methods
-  return {
-    init: init,
-    animateScroll: animateScroll
-  };
 })(window, document);
+

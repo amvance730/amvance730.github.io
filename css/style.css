@@ -196,6 +196,14 @@ header {
       "SOFT" 0,
       "WONK" 0;
   }
+  .instrumentsans {
+    font-family: "Instrument Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
   
   footer {
       background-color: #072768;
