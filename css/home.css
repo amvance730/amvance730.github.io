@@ -15,7 +15,7 @@
     transition: transform 0.2s ease;
     line-height: 1;
   }
-#heartImage {
+  .heart-image {
     height: 1.5rem;
     margin-left: 1rem;
     display: flex;
