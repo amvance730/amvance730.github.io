@@ -32,44 +32,36 @@
       </header>
     <main>
             <div class="featured-product">
-                <h1 class="featuredproducttext" >Featured Product</h1>
+                <h1 class="featuredproducttext" >Featured Products</h1>
                 <div class="card1">
                     <img src="./images/featuredproduct.png" alt="Zero Gravity Electric Recliner in gray">
                     <h2>Zero Gravity Recliner</h2>
-                    <h3>Best Home Furnishings</h3>
-                    <button class="like-button" id="likeBtn">Favorite
+                    <h3 class="instrumentsans">Best Home Furnishings</h3>
+                    <button class="like-button" data-liked="false">Favorite
                         <img id="heartImage" src="/images/emptyheart.png" alt="heart" />
                     </button>
                 </div>
                 <div class="card2">
-                    <img src="./images/featuredproduct.png" alt="Zero Gravity Electric Recliner in gray">
-                    <h2>Zero Gravity Recliner</h2>
-                    <h3>Best Home Furnishings</h3>
-                    <button class="like-button" id="likeBtn">Favorite
+                    <img src="./images/gilliam leg table.png" alt="Gilliam Leg Table">
+                    <h2>Gilliam Leg Table</h2>
+                    <h3 class="instrumentsans">American Drew</h3>
+                    <button class="like-button" data-liked="false">Favorite
                         <img id="heartImage" src="/images/emptyheart.png" alt="heart" />
                     </button>
                 </div>
                 <div class="card3">
-                    <img src="./images/featuredproduct.png" alt="Zero Gravity Electric Recliner in gray">
-                    <h2>Zero Gravity Recliner</h2>
-                    <h3>Best Home Furnishings</h3>
-                    <button class="like-button" id="likeBtn">Favorite
+                    <img src="./images/kingbed.png" alt="King Storage Bed">
+                    <h2>King Storage Bed</h2>
+                    <h3 class="instrumentsans">A American</h3>
+                    <button class="like-button" data-liked="false">Favorite
                         <img id="heartImage" src="/images/emptyheart.png" alt="heart" />
                     </button>
                 </div>
                 <div class="card4">
-                    <img src="./images/featuredproduct.png" alt="Zero Gravity Electric Recliner in gray">
-                    <h2>Zero Gravity Recliner</h2>
-                    <h3>Best Home Furnishings</h3>
-                    <button class="like-button" id="likeBtn">Favorite
-                        <img id="heartImage" src="/images/emptyheart.png" alt="heart" />
-                    </button>
-                </div>
-                <div class="card5">
-                    <img src="./images/featuredproduct.png" alt="Zero Gravity Electric Recliner in gray">
-                    <h2>Zero Gravity Recliner</h2>
-                    <h3>Best Home Furnishings</h3>
-                    <button class="like-button" id="likeBtn">Favorite
+                    <img src="./images/JrExecutiveBookcase.png" alt="Jr Executive 48 Inch Bookcase">
+                    <h2>Jr Executive Bookcase</h2>
+                    <h3 class="instrumentsans">Liberty Furniture Industries</h3>
+                    <button class="like-button" data-liked="false">Favorite
                         <img id="heartImage" src="/images/emptyheart.png" alt="heart" />
                     </button>
                 </div>
@@ -94,17 +86,24 @@
     <script src="js/scroll.js"></script>
     <script src="js/fixed-responsive-nav.js"></script>
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
+
     <script>
-        const likeBtn = document.getElementById("likeBtn");
-        const heartImage = document.getElementById("heartImage");
+        const likeButtons = document.querySelectorAll('.like-button');
     
-        let liked = false;
+        likeButtons.forEach(button => {
+          const img = button.querySelector('img');
     
-        likeBtn.addEventListener("click", () => {
-          liked = !liked;
-          heartImage.src = liked 
-  ? "/images/fullheart.png"
-  : "/images/emptyheart.png";
+          button.addEventListener('click', () => {
+            const isLiked = button.getAttribute('data-liked') === 'true';
+    
+            if (isLiked) {
+              img.src = '/images/emptyheart.png';
+              button.setAttribute('data-liked', 'false');
+            } else {
+              img.src = '/images/fullheart.png';
+              button.setAttribute('data-liked', 'true');
+            }
+          });
         });
       </script>
 </body>  
