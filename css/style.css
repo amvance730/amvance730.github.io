@@ -89,33 +89,17 @@ header {
   z-index: 1;
 }
 
-.nav-collapse.opened {
-  max-height: 300px;
-  padding-top: 0.5rem;
-  padding-bottom: 1rem;
-}
-
-.js-nav-active header {
-  padding-bottom: 5.5rem;
-}
-
 .nav-collapse ul {
   flex-direction: column;
   width: 100%;
   padding: 0;
   margin: 0;
-  align-items: flex-end;
-  padding-right: 1.5rem;
-  position: relative;
-  z-index: 3;
   list-style: none;
 }
 
 .nav-collapse li {
-  width: auto;
-  text-align: right;
-  position: relative;
-  z-index: 3;
+  width: 100%;
+  text-align: center;
   margin: 0;
   padding: 0;
 }
@@ -123,22 +107,25 @@ header {
 .nav-collapse a {
   font-family: "Fraunces", serif;
   text-decoration: none;
-  padding: 1rem 0;
+  padding: 1rem;
   color: rgb(255, 255, 255);
   display: block;
   transition: all 0.3s ease;
-  width: auto;
-  white-space: nowrap;
-  position: relative;
-  z-index: 3;
   font-size: 1.2rem;
-  margin-right: -0.3rem;
 }
 
 .nav-collapse a:hover,
 .nav-collapse a:focus {
   text-decoration: underline;
   color: rgb(255, 255, 255);
+}
+
+.nav-collapse.opened {
+  max-height: 300px;
+}
+
+.js-nav-active header {
+  padding-bottom: 5.5rem;
 }
 
 /* Desktop styles */
@@ -153,22 +140,29 @@ header {
     max-height: none;
     display: flex;
     align-items: center;
+    background: transparent;
+    width: auto;
   }
 
   .nav-collapse ul {
+    display: flex;
     flex-direction: row;
     align-items: center;
-    padding-right: 0;
     justify-content: flex-end;
+    padding: 0;
+    margin: 0;
   }
 
   .nav-collapse li {
-    text-align: left;
+    width: auto;
+    margin: 0;
   }
 
   .nav-collapse a {
     padding: 1rem 1.5rem;
     font-size: 1.1rem;
+    white-space: nowrap;
+    border: none;
   }
 
   .js-nav-active header {

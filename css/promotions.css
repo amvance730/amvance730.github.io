@@ -20,8 +20,11 @@ main {
     font-family: "Fraunces", serif;
     font-size: 1rem;
     padding: 2rem;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
 }
 
 .page-title {
@@ -30,8 +33,8 @@ main {
     color: #072768;
     margin-bottom: 2rem;
     font-weight: 700;
+    grid-column: 1 / -1;
 }
-
 
 .deals {
     display: grid;
@@ -42,18 +45,14 @@ main {
 
 .sale-item {
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
     border: 2px solid #072768;
     border-radius: 1rem;
     padding: 2rem;
     background: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-bottom: 2.5rem;
-}
-
-.sale-item:last-child {
-    margin-bottom: 0;
+    transition: all 0.3s ease;
+    height: 100%;
 }
 
 .sale-item:hover {
@@ -64,6 +63,7 @@ main {
 .sale-item h2 {
     color: #072768;
     font-size: 1.5rem;
+    margin-top: 0;
     margin-bottom: 1rem;
     text-align: center;
 }
@@ -76,6 +76,7 @@ main {
 }
 
 .promo-features {
+    flex: 1;
     list-style-type: none;
     padding: 0;
     margin: 1rem 0;
@@ -97,9 +98,8 @@ main {
 
 .sale-item > img {
     order: -1;
-    align-self: center;
-    max-width: 100%;
-    height: 200px;
+    width: 100%;
+    height: 250px;
     object-fit: cover;
     border-radius: 0.5rem;
     margin-bottom: 1.5rem;
@@ -120,6 +120,7 @@ main {
     cursor: pointer;
     transition: background-color 0.3s ease;
     font-family: "Fraunces", serif;
+    width: 100%;
 }
 
 .cta-button:hover {
@@ -127,19 +128,58 @@ main {
     color: #072768;
 }
 
-@media screen and (max-width: 768px) {
-    .deals {
-        grid-template-columns: 1fr;
-        padding: 0.5rem;
+/* Responsive Grid Layout */
+@media screen and (min-width: 640px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    main {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    main {
+        padding: 1rem;
     }
     
     .sale-item {
         padding: 1.5rem;
     }
     
+    .sale-item > img {
+        height: 200px;
+    }
+    
     .page-title {
         font-size: 2rem;
+        margin-bottom: 1.5rem;
     }
+}
+
+/* Ensure content fills available space */
+.sale-item h2 {
+    margin-top: 0;
+}
+
+.promo-features {
+    flex: 1;
+    margin: 1rem 0;
+}
+
+.cta-button {
+    margin-top: auto;
+    width: 100%;
 }
 
 .fraunces-bold{
