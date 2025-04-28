@@ -414,7 +414,7 @@ right: 1rem;
     max-width: 800px;
 }
 
-.hero-content h1 {
+.hero-content h2 {
     font-size: clamp(2.5rem, 5vw, 4rem);
     margin-bottom: 1rem;
     font-family: 'Fraunces', serif;
