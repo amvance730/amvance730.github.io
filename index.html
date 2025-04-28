@@ -50,7 +50,7 @@
                         <h2>Dovetail Bed</h2>
                         <h3 class="instrumentsans">Vaughan-Bassett Furniture</h3>
                         <button class="like-button" data-liked="false">Favorite
-                            <img class="heart-image" src="/images/emptyheart.png" alt="heart" />
+                            <img class="heart-image" src="./images/emptyheart.png" alt="heart" />
                         </button>
                     </div>
                 </div>
@@ -60,7 +60,7 @@
                         <h2>Ben's Poster Bed</h2>
                         <h3 class="instrumentsans">Vaughan-Bassett Furniture</h3>
                         <button class="like-button" data-liked="false" id="card1button">Favorite
-                            <img class="heart-image" src="/images/emptyheart.png" alt="heart" />
+                            <img class="heart-image" src="./images/emptyheart.png" alt="heart" />
                         </button>
                     </div>
                 </div>
@@ -70,7 +70,7 @@
                         <h2>Arch Bed</h2>
                         <h3 class="instrumentsans">Vaughan-Bassett Furniture</h3>
                         <button class="like-button" data-liked="false">Favorite
-                            <img class="heart-image" src="/images/emptyheart.png" alt="heart" />
+                            <img class="heart-image" src="./images/emptyheart.png" alt="heart" />
                         </button>
                     </div>
                 </div>
@@ -80,7 +80,7 @@
                         <h2>Board & Batten Bed</h2>
                         <h3 class="instrumentsans">Vaughan-Bassett Furniture</h3>
                         <button class="like-button" data-liked="false">Favorite
-                            <img class="heart-image" src="/images/emptyheart.png" alt="heart" />
+                            <img class="heart-image" src="./images/emptyheart.png" alt="heart" />
                         </button>
                     </div>
                 </div>
@@ -95,27 +95,27 @@
           
             <div class="slides">
               <div class="slide s1">
-                <img src="/images/aamerican.png" alt="Slide 1">
+                <img src="./images/aamerican.png" alt="Slide 1">
                 <label for="slide5" class="prev">&#10094;</label>
                 <label for="slide2" class="next">&#10095;</label>
               </div>
               <div class="slide s2">
-                <img src="/images/besthomefurnishings.jpg" alt="Slide 2">
+                <img src="./images/besthomefurnishings.jpg" alt="Slide 2">
                 <label for="slide1" class="prev">&#10094;</label>
                 <label for="slide3" class="next">&#10095;</label>
               </div>
               <div class="slide s3">
-                <img src="/images/craftsmaster.png" alt="Slide 3">
+                <img src="./images/craftsmaster.png" alt="Slide 3">
                 <label for="slide2" class="prev">&#10094;</label>
                 <label for="slide4" class="next">&#10095;</label>
               </div>
               <div class="slide s4">
-                <img src="/images/england.png" alt="Slide 4">
+                <img src="./images/england.png" alt="Slide 4">
                 <label for="slide3" class="prev">&#10094;</label>
                 <label for="slide5" class="next">&#10095;</label>
               </div>
               <div class="slide s5">
-                <img src="/images/vaughanbasett.png" alt="Slide 5">
+                <img src="./images/vaughanbasett.png" alt="Slide 5">
                 <label for="slide4" class="prev">&#10094;</label>
                 <label for="slide1" class="next">&#10095;</label>
               </div>
@@ -156,10 +156,10 @@
     likeButtons.forEach(button => {const img = button.querySelector('.heart-image'); 
     button.addEventListener('click', () => {const isLiked = button.getAttribute('data-liked') === 'true';
     if (isLiked) {
-      img.src = '/images/emptyheart.png';
+      img.src = './images/emptyheart.png';
       button.setAttribute('data-liked', 'false');
     } else {
-      img.src = '/images/fullheart.png';
+      img.src = './images/fullheart.png';
       button.setAttribute('data-liked', 'true');
     }
   });
